@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feature Branching & Merge Conflict Assignment</title>
+</head>
+<body>
+    <h2>Git Assignment: Feature Branching & Conflict Resolution</h2>
+
+    <p><strong>Task:</strong></p>
+    <ol>
+        <li>Create two branches:
+            <ul>
+                <li><code>feature-course</code> – add Course Registration feature</li>
+                <li><code>feature-event</code> – add Event Calendar feature</li>
+            </ul>
+        </li>
+
+        <li>Implement each feature in its respective branch.</li>
+
+        <li>Merge both branches into <code>main</code>.</li>
+
+        <li>If a merge conflict occurs, resolve it and make a final commit.</li>
+    </ol>
+
+    <h3>Example code added in each feature:</h3>
+
+    <p><strong>feature-course:</strong></p>
+    <pre>
+&lt;div id="course-registration"&gt;
+  &lt;h3&gt;Course Registration&lt;/h3&gt;
+  &lt;input type="text" placeholder="Enter Name"&gt;
+  &lt;button&gt;Register&lt;/button&gt;
+&lt;/div&gt;
+    </pre>
+
+    <p><strong>feature-event:</strong></p>
+    <pre>
+&lt;div id="event-calendar"&gt;
+  &lt;h3&gt;Event Calendar&lt;/h3&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Workshop - 12 Dec&lt;/li&gt;
+    &lt;li&gt;Seminar - 20 Dec&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+    </pre>
+
+    <h3>Final Merge Result (after resolving conflicts):</h3>
+    <pre>
+&lt;div id="course-registration"&gt; ... &lt;/div&gt;
+&lt;div id="event-calendar"&gt; ... &lt;/div&gt;
+    </pre>
+</body>
+</html>
